@@ -6,8 +6,8 @@ A estrutura do projeto está alinhada com a estrutura do curso, mantendo a mesma
 
 - **Module:** Cada módulo do curso terá sua própria pasta.
 - **Week:** Dentro de cada módulo, os arquivos são separados por semanas.
-- **Exercises:** Dentro de cada semana, os exercícios semanais terão sua própria pasta.
 - **Class:** Os exercícios realizados durante as aulas também serão organizados em pastas específicas.
+- **Exercises:** Dentro de cada semana, os exercícios semanais terão sua própria pasta.
 
 <h3>Exemplo da estrutura</h3>
 
@@ -15,19 +15,19 @@ A estrutura do projeto está alinhada com a estrutura do curso, mantendo a mesma
 /devinhouse-clamed
   /module_1
     /week_1
-      /exercises
-        - index.html
-        - script.js
       /class
         - class_1.js
         - class_2.js
-    /week_2
       /exercises
         - index.html
         - script.js
-      /calss
+    /week_2
+      /class
         - class_1.js
         - class_2.js
+      /exercises
+        - index.html
+        - script.js
 ```
 
 <h2>Promotores</h2>
