@@ -1,0 +1,47 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.d-none {
+  display: none;
+  background-color: tomato;
+}
+
+.d-block {
+  display: block;
+  background-color: aquamarine;
+  margin: 10px 0
+}
+
+.w-50{
+  width: 50vw;
+  background-color: blueviolet;
+}
+
+.d-inline {
+  display: inline;
+  background-color: chartreuse;
+}
+
+.d-flex{
+  display: flex;
+  flex-direction: column;
+  height: 150px;
+  background-color: chocolate;
+  margin: 20px 0;
+}
+
+span{
+  width: fit-content;
+}
+
+.header {
+  background-color: cyan;
+  height: 30px;
+}
+
+.content {
+  background-color: blue;
+  height: 50px;
+}

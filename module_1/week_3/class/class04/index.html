@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Modulo 1 | Semana 3 | Dia 04</title>
+  </head>
+  <body>
+
+    <!-- Ao usar display none os elementos são escondidos e não são renderizados. -->
+    <div class="menu d-none">
+      <ul>
+        <li>Início</li>
+        <li>Sobre</li>
+        <li>Contato</li>
+      </ul>
+    </div>
+
+    <!-- Ao usar o display block os elementos vão ocupar a largura toda disponível. -->
+    <div class="d-block">
+      <span class="d-block">Aqui vai ocupar a linha toda</span>
+      <span class="d-block">TEXTO</span>
+      <span class="d-block">OUTRO TEXTO</span>
+    </div>
+
+    <!-- Aqui está sendo usado a metade da wiew por conta do 50 ww e está em linha por conta do display block.-->
+    <div class="w-50 d-block">
+      <span class="d-block">Aqui vai ocupar a linha toda</span>
+      <span class="d-block">TEXTO</span>
+      <span class="d-block">OUTRO TEXTO</span>
+    </div>
+
+    <!-- Neste exemplo ocupa o tamanho necessário para todos os elementos e está em linha por conta do display inline-->
+    <div class="d-inline">
+      <span>Aqui vai ocupar o tamanho necessário</span>
+      <span>SE COLOCARMOS MAIS ELEMENTOS INLINE</span>
+      <span>irá ficar corrido na linha</span>
+    </div>
+
+    <!-- Aqui os elementos vão ficar em colunas porque adicionamos o display flex que torna possível mexer em algumas coisas e colocamos a direção como coluna-->
+    <div class="d-flex">
+      <span>Elemento 1</span>
+      <span>Elemento 2</span>
+      <span>Elemento 3</span>
+    </div>
+
+    <div class="d-flex">
+      <div class="header">HEADER</div>
+      <div class="content">CONTENT</div>
+    </div>
+  </body>
+</html>
