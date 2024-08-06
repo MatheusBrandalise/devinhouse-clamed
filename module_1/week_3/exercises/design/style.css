@@ -1,0 +1,20 @@
+* { 
+  @import url('https://fonts.googleapis.com/css2?family=Biryani:wght@400;700&family=Poppins&family=Roboto:wght@400;500;700&family=Staatliches&display=swap');
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+}
+
+
+header {
+  background-color: #fcb74d;
+  height:15vh;
+  font-size: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.font-title{
+  color: #f88f2c;
+  font-weight: 700;
+}
