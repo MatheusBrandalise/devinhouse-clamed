@@ -1,20 +1,44 @@
-* { 
-  @import url('https://fonts.googleapis.com/css2?family=Biryani:wght@400;700&family=Poppins&family=Roboto:wght@400;500;700&family=Staatliches&display=swap');
+* {
+  @import url("https://fonts.googleapis.com/css2?family=Biryani:wght@400;700&family=Poppins&family=Roboto:wght@400;500;700&family=Staatliches&display=swap");
   font-family: "Roboto", sans-serif;
   font-weight: 400;
+  background-color: #f0f0f0;
 }
-
 
 header {
   background-color: #fcb74d;
-  height:15vh;
+  height: 15vh;
   font-size: 50px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.font-title{
+.font-title {
   color: #f88f2c;
   font-weight: 700;
+}
+
+.navbar {
+  padding: 0;
+  font-size: 20px;
+}
+
+.navbar li:hover a {
+  color: #814105;
+}
+
+.navbar-align {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-link {
+  color: #fcb74d;
+}
+
+.active {
+  font-weight: 700;
+  color: #f88f2c !important;
 }
