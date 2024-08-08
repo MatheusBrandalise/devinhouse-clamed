@@ -1,0 +1,40 @@
+* {
+  margin: 0;
+  padding: 0; 
+}
+
+.container{
+  width: 50vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.calculator{
+  padding: 10px;
+  border: 2px #6e7174 solid;
+  border-radius: 10px;
+}
+
+h1{
+  color: #007ef5;
+  font-weight: 700;
+}
+
+form{
+  margin: 10px 0 0 0;
+  border: 2px #0000 solid;
+}
+
+.result-container{
+  margin: 15px 0 10px 0;
+  padding: 3px;
+  border-radius: 10px;
+  font-size: 20px;
+  color: #31a315;
+  text-align: center;
+  font-weight: 700;
+  display: contents;
+}
