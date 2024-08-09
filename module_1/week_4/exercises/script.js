@@ -1,7 +1,7 @@
 document.getElementById("calculator-button").addEventListener("click", function () {
     // Chamar a função sum() quando o botão for clicado
-    sum();
-  });
+    sum()
+  })
 
 function sum() {
   // Capturar os valores dentro da função para garantir que sejam lidos no momento do clique
@@ -19,4 +19,9 @@ function sum() {
     // Mensagem de erro se algum número não for válido
         document.getElementById('resultDisplay').textContent = "Por favor, digite dois números válidos.";
   }
-};
+}
+
+function consoleTest(){
+  const test = "Script funcionando!"
+  console.log(test)
+}

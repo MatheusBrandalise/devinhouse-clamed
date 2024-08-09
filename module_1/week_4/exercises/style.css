@@ -3,16 +3,36 @@
   padding: 0; 
 }
 
-.container{
+.container-app{
   width: 50vw;
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.container-home{
+  width: 60vw;
   height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
 }
 
-.calculator{
+header{
+  padding: 15px;
+  text-align: left;
+  height: 10vh;
+}
+
+.content{
   padding: 10px;
   border: 2px #6e7174 solid;
   border-radius: 10px;
@@ -28,7 +48,12 @@ form{
   border: 2px #0000 solid;
 }
 
-.result-container{
+.exercises-menu{
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.result-wrap{
   margin: 15px 0 10px 0;
   padding: 3px;
   border-radius: 10px;
@@ -39,16 +64,28 @@ form{
   display: contents;
 }
 
-.button-calc{
+.purple-button{
   background-color: #ffffff;
   border-color: #6a00f5;
   font-weight: 700;
   color: #6a00f5;
 }
 
-.button-calc:hover{
+.purple-button:hover{
   background-color: #6a00f5;
   border-color: #6a00f5;
   font-weight: 700;
   color: #ffffff;
+}
+
+.back-button{
+  background-color: #0a33e7;
+  border-color: #0a33e7;
+  color: #ffffff;
+}
+
+.back-button:hover{
+  background-color: #ffffff;
+  border-color: #0a33e7;
+  color: #0a33e7;
 }
