@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./design/style.css" />
+    <link rel="icon" href="./assets/favico.ico" type="image/x-icon">
+    <title>&#128054; ADOTA PET</title>
+  </head>
+  <body>
+    <div class="container-content">
+      <div class="container-home">
+        <h1>Cadastro de Pets</h1>
+        <form>
+          <div class="form-row">
+            <div class="input-container double-input">
+              <label for="petName">Nome do Pet</label>
+              <input id="petName" placeholder="Digite o nome completo do Pet" />
+            </div>
+            <div class="input-container double-input">
+              <label for="petAge">Idade do Pet</label>
+              <input id="petAge" placeholder="Digite a idade do Pet" />
+            </div>
+          </div>
+            <div class="input-container">
+              <label for="color">Cor do Pet</label>
+              <input type="color" id="color" value="#854c4c">
+            </div>
+            <div class="input-container">
+              <label for="description">Descrição</label>
+              <textarea type="text" id="description" placeholder="Informe as características do seu Pet"></textarea>
+            </div>
+            <div class="button-container">
+              <button class="button-submit" type="submit">Salvar</button>
+            </div>
+        </form>
+      </div>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>

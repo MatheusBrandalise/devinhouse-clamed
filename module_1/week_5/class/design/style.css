@@ -1,0 +1,94 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  @import url('https://fonts.googleapis.com/css2?family=Biryani:wght@400;700&family=Poppins&family=Roboto:wght@400;700&family=Rubik:ital,wght@0,300..900;1,300..900&family=Staatliches&display=swap');
+  font-family: "Rubik", sans-serif;
+}
+
+body {
+  background-image: url("../assets/background.jpg");
+}
+
+.container-content{
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.container-home h1 {
+  color: #df8333;
+  text-align: center;
+  margin: 10px 0;
+}
+
+.container-home {
+  width: 70vw;
+  background-color: #e7e8e9;
+  margin: 0 auto;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 5px 3px 2px #888888;;
+}
+
+.input-container {
+  display: flex;
+  flex-direction: column;
+  margin: 0 0 10px 0;
+}
+
+.input-container label {
+  margin: 0 0 5px 0;
+  color: #20282c;
+  font-weight: bold;
+}
+
+.input-container input {
+  width: 100%;
+  height: 35px;
+  font-size: 20px;
+  border-radius: 5px;
+  outline-color: #7f96a1;
+  border: 1px solid #bebebe;
+  padding: 5px;
+  color: #50626b;
+}
+
+.double-input{
+  flex-basis: 45%;
+}
+
+.form-row{
+  display: flex;
+  justify-content: space-between;
+}
+
+.input-container textarea {
+  height: 10em;
+  font-size: 20px;
+  border-radius: 5px;
+  outline-color: #7f96a1;
+  border: 1px solid #bebebe;
+  padding: 5px;
+  resize: none;
+  color: #50626b;
+}
+
+.button-container{
+  display: flex;
+  justify-content: flex-end;
+}
+
+.button-submit{
+  width: 100px;
+  background-color: #df8333;
+  border-radius: 5px;
+  border: none;
+  font-size: 20px;
+  color: #ffffff;
+  padding: 2px;
+}
