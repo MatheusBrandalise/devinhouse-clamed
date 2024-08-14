@@ -11,31 +11,47 @@
     <div class="container-content">
       <div class="container-home">
         <h1>Cadastro de Pets</h1>
-        <form>
+        <form id="pet-create">
+          <div class="input-container">
+            <label for="pet-photo">Foto do pet<span class="required">*</span></label>
+            <input type="url" id="pet-photo" placeholder="Informe a url com a imagem do seu Pet"/>
+          </div>
           <div class="form-row">
             <div class="input-container double-input">
-              <label for="petName">Nome do Pet</label>
-              <input id="petName" placeholder="Digite o nome completo do Pet" />
+              <label for="pet-name">Nome do Pet<span class="required">*</span></label>
+              <input id="pet-name" placeholder="Digite o nome completo do Pet" />
+              <span class="validation-error" id="pet-name-error"></span>
             </div>
             <div class="input-container double-input">
-              <label for="petAge">Idade do Pet</label>
-              <input id="petAge" placeholder="Digite a idade do Pet" />
+              <label for="pet-age">Idade do Pet<span class="required">*</span></label>
+              <input id="pet-age" placeholder="Digite a idade do Pet" />
             </div>
           </div>
             <div class="input-container">
-              <label for="color">Cor do Pet</label>
-              <input type="color" id="color" value="#854c4c">
+              <label for="pet-color">Cor do Pet<span class="required">*</span></label>
+              <input type="color" id="pet-color" value="#854c4c">
             </div>
             <div class="input-container">
-              <label for="description">Descrição</label>
-              <textarea type="text" id="description" placeholder="Informe as características do seu Pet"></textarea>
+              <label for="pet-description">Descrição<span class="required">*</span></label>
+              <textarea type="text" id="pet-description" placeholder="Informe as características do seu Pet"></textarea>
             </div>
+            <div class="input-container">
+              <label for="pet-species">Espécie<span class="required">*</span></label>
+              <select id="pet-species">
+                <option value="none" disabled selected>Selecione uma opção...</option>
+                <option value="dog">Cachorro</option>
+                <option value="cat">Gato</option>
+                <option value="bird">Pássaro</option>
+                <option value="others">Outro</option>
+              </select>
+            </div>
+
             <div class="button-container">
               <button class="button-submit" type="submit">Salvar</button>
             </div>
         </form>
       </div>
     </div>
-    <script src="./script.js"></script>
+    <script src="./scripts/petCreate.js"></script>
   </body>
 </html>
