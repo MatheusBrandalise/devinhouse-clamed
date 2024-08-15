@@ -97,6 +97,7 @@ img {
   font-size: 20px;
   color: #ffffff;
   padding: 2px;
+  cursor: pointer;
 }
 
 .validation-error{
