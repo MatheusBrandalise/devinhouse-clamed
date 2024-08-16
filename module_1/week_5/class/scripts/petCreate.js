@@ -15,30 +15,33 @@ const addPet = (event) => {
   console.log(petColor);
   console.log(petDescription);
 
+  if (petPhoto && petName && petAge) {
+    const pet = {
+      id: crypto.randomUUID(),
+      petPhoto: petPhoto,
+      petName: petName,
+      petAge: petAge,
+      petColor: petColor,
+      petDescription: petDescription,
+      petSpecies: petSpecies,
+    };
 
-  const pet = {
-    id: crypto.randomUUID(),
-    petPhoto: petPhoto,
-    petName: petName,
-    petAge: petAge,
-    petColor: petColor,
-    petDescription: petDescription,
-    petSpecies: petSpecies
+    // Pega os itens pet no local storage, transforma de String para array e insere na localStorageList
+    // Fazemos isso para recuperar o que já tem no localStorage, para não ficarmos zerando a lista
+    const localStorageList = JSON.parse(localStorage.getItem("pets")) || [];
+
+    // Envia um objeto do tipo pet que é o que estamos informando no momnento na tela, será enviado para o localStorageList
+    localStorageList.push(pet);
+
+    // Salvar no localStorage
+    // JSON.stringify serve para transformar o objeto em String pois o local Storage só trabalha com String - NECESSÁRIO
+    localStorage.setItem("pets", JSON.stringify(localStorageList));
+
+    console.log(`lista em memória`, localStorageList);
+
+    // Reseta os campos do formulário
+    document.getElementById('pet-create').reset();
   }
-
-  // Pega os itens pet no local storage, transforma de String para array e insere na localStorageList
-  // Fazemos isso para recuperar o que já tem no localStorage, para não ficarmos zerando a lista
-  const localStorageList = JSON.parse(localStorage.getItem('pets')) || []
-
-  // Envia um objeto do tipo pet que é o que estamos informando no momnento na tela, será enviado para o localStorageList 
-  localStorageList.push(pet)
-
-  // Salvar no localStorage
-  // JSON.stringify serve para transformar o objeto em String pois o local Storage só trabalha com String - NECESSÁRIO
-  localStorage.setItem('pets', JSON.stringify(localStorageList)) 
-
-
-  console.log(`lista em memória`, localStorageList)
 
   if (!petPhoto) {
     document.getElementById("pet-photo-error").innerText =
